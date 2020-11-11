@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <section class="landing">
+      <nav>
+        <h1 id="logo">Flash</h1>
+        <ul class="nav-link">
+          <div class="nav-block">
+            <li>About</li>
+          </div>
+          <div class="nav-block">
+            <li>Services</li>
+          </div>
+          <div class="nav-block">
+            <li>Contact</li>
+          </div>
+        </ul>
+      </nav>
+      <h2 class="big-text">Welcome</h2>
+    </section>
+  </main>
+  <!-- <div class="intro">
+  <div class="intro-text">
+    <h1 class="hide">
+      <span class="text">To be,</span>
+    </h1>
+    <h1 class="hide">
+      <span class="text">or Not to be, </span>
+    </h1>
+    <h1 class="hide">
+      <span class="text">That's the question </span>
+    </h1>
+  </div>
+</div>
+<div class="slider"></div> -->
+
+  <div class="content">
+    <h1 class="l-title about-content">About</h1>
+      <div class="contents">
+      <img src="./imgs/nature.svg" class="content-img" alt="">
+      <p class="context">
+        This looks a bit more complex but we're using the same pattern to access each DOM node.
+        Not that difficult, right? Let's go through the code so we can understand what is happening.
+      </p>
+    </div>
+  </div>
+  <hr/>
+  <div class="content">
+    <h1 class="l-title services-content">Services</h1>
+    <div class="contents">
+      <img src="./imgs/tree.svg" class="content-img" alt="">
+      <p class="context">
+        We won't always get all the elements in an array so sometimes we might need to create a complex animation using
+        different elements. Just like in the first example we store a reference in the constructor for each element and
+        create our timeline
+      </p>
+    </div>
+  </div>
+  <hr />
+  <div class="news">
+    <h1 class="l-title">News</h1>
+    <a href="">
+      <p class="news-text">2020/11/5 😊 meet upの様子</p>
+    </a>
+    <a href="">
+      <p class="news-text">2020/10/30 📗今月の報告</p>
+    </a>
+    <a href="">
+      <p class="news-text">2020/10/16 👍来月開催予定のイベントについて</p>
+    </a>
+    <a href="">
+      <p class="news-text">2020/9/25 🥺コロナ感染対策について</p>
+    </a>
+  </div>
+
+
+  <footer>
+
+    <div class="footerWrap">
+      <div class="footer-row">
+        <div class="footer-links">
+          <div class='footer-items'>
+            <h2>About us
+            </h2>
+            <p>What is this</p>
+            <p>What this is for</p>
+            <p>Recrout</p>
+            <p>Stakeholder</p>
+            <p>Investment</p>
+          </div>
+          <div class='footer-items'>
+            <h2>About us
+            </h2>
+            <p>What is this</p>
+            <p>What this is for</p>
+            <p>Recrout</p>
+            <p>Stakeholder</p>
+            <p>Investment</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class='footer-items'>
+            <h2>About us
+            </h2>
+            <p>What is this</p>
+            <p>What this is for</p>
+            <p>Recrout</p>
+            <p>Stakeholder</p>
+            <p>Investment</p>
+          </div>
+          <div class='footer-items'>
+            <h2>About us
+            </h2>
+            <p>What is this</p>
+            <p>What this is for</p>
+            <p>Recrout</p>
+            <p>Stakeholder</p>
+            <p>Investment</p>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="SocialMediaWrap">
+          <div class="SocialIcons">
+            <a href='/' target='_blank' aria-label='facebook'>
+              <FaFacebook />
+            </a>
+            <a href='/' target='_blank' aria-label='Instagram'>
+              <FaInstagram />
+            </a>
+            <a href='/' target='_blank' aria-label='Twitter'>
+              <FaTwitter />
+            </a>
+            <a href='/' target='_blank' aria-label='Youtube'>
+              <FaYoutube />
+            </a>
+            <a href='/' target='_blank' aria-label='Linkedin'>
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+        <a class="footer-logo" href="/">Flash</a>
+        <WebsiteRights>Flash &copy; {new Date().getFullYear()} All right reserved.</WebsiteRights>
+         <!-- Latansani © 新しい年を表示 -->
+      </section>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  
+  <script src="js/index.js"></script>
+</body>
+
+</html>
