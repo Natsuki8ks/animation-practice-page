@@ -20,7 +20,8 @@ nav {
   color: rgb(54, 46, 46);
 }
 #logo {
-  padding: 10px 0 0 30px;
+  padding: 5px 0 0 30px;
+  font-size: 28px;
 }
 .nav-link {
   display: flex;
@@ -33,6 +34,14 @@ nav {
 }
 li:hover {
   opacity: .6;
+}
+.menu-btn {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 1.5rem;
+  top: .8rem;
+  font-size: 28px;
 }
 .big-text {
   position: absolute;
@@ -83,6 +92,9 @@ li:hover {
 .l-title {
   margin: 3rem auto;
   text-align: center;
+  background: #000;
+  color: #ddd;
+  width: 300px;
 }
 .contents {
   display: flex;
@@ -102,7 +114,10 @@ img {
   /* つぶれたイメージを調整 */
 }
 .news {
-  padding: 4rem;
+  padding: 5rem;
+}
+.news-content{
+  padding: 2rem;
 }
 .news-text {
   padding: .5rem 3rem;
@@ -138,4 +153,16 @@ section {
   display: flex;
   padding: 2rem 2rem 1rem 2rem;
   justify-content: center;
+}
+.SocialMediaWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialIcons {
+  font-size: 24px;
+  text-decoration: none;
+}
+.facebook {
+  color: rgb(115, 121, 211);
 }

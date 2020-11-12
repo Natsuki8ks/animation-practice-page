@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/dfe6dab2b9.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 
@@ -13,7 +14,7 @@
     <section class="landing">
       <nav>
         <h1 id="logo">Flash</h1>
-        <ul class="nav-link">
+        <!-- <ul class="nav-link">
           <div class="nav-block">
             <li>About</li>
           </div>
@@ -23,7 +24,10 @@
           <div class="nav-block">
             <li>Contact</li>
           </div>
-        </ul>
+        </ul> -->
+        <span class="menu-btn" id="menu-btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
       </nav>
       <h2 class="big-text">Welcome</h2>
     </section>
@@ -45,20 +49,20 @@
 
   <div class="content">
     <h1 class="l-title about-content">About</h1>
-      <div class="contents">
-      <img src="./imgs/nature.svg" class="content-img" alt="">
-      <p class="context">
+    <div class="contents">
+      <img src="./imgs/nature.svg" class="content-img content-img2" alt="">
+      <p class="context context2">
         This looks a bit more complex but we're using the same pattern to access each DOM node.
         Not that difficult, right? Let's go through the code so we can understand what is happening.
       </p>
     </div>
   </div>
-  <hr/>
+  <hr />
   <div class="content">
     <h1 class="l-title services-content">Services</h1>
     <div class="contents">
-      <img src="./imgs/tree.svg" class="content-img" alt="">
-      <p class="context">
+      <img src="./imgs/tree.svg" class="contnet-img content-img3" alt="">
+      <p class="context context3">
         We won't always get all the elements in an array so sometimes we might need to create a complex animation using
         different elements. Just like in the first example we store a reference in the constructor for each element and
         create our timeline
@@ -67,19 +71,22 @@
   </div>
   <hr />
   <div class="news">
+    &nbsp;
     <h1 class="l-title">News</h1>
-    <a href="">
-      <p class="news-text">2020/11/5 😊 meet upの様子</p>
-    </a>
-    <a href="">
-      <p class="news-text">2020/10/30 📗今月の報告</p>
-    </a>
-    <a href="">
-      <p class="news-text">2020/10/16 👍来月開催予定のイベントについて</p>
-    </a>
-    <a href="">
-      <p class="news-text">2020/9/25 🥺コロナ感染対策について</p>
-    </a>
+    <div class="news-content">
+      <a href="">
+        <p class="news-text">2020/11/5 😊 meet upの様子</p>
+      </a>
+      <a href="">
+        <p class="news-text">2020/10/30 📗今月の報告</p>
+      </a>
+      <a href="">
+        <p class="news-text">2020/10/16 👍来月開催予定のイベントについて</p>
+      </a>
+      <a href="">
+        <p class="news-text">2020/9/25 🥺コロナ感染対策について</p>
+      </a>
+    </div>
   </div>
 
 
@@ -132,27 +139,27 @@
         <div class="SocialMediaWrap">
           <div class="SocialIcons">
             <a href='/' target='_blank' aria-label='facebook'>
-              <FaFacebook />
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a href='/' target='_blank' aria-label='Instagram'>
-              <FaInstagram />
+              <i class="fab fa-instagram"></i>
             </a>
             <a href='/' target='_blank' aria-label='Twitter'>
-              <FaTwitter />
+              <i class="fab fa-twitter-square"></i>
             </a>
             <a href='/' target='_blank' aria-label='Youtube'>
-              <FaYoutube />
+              <i class="fab fa-youtube"></i>
             </a>
             <a href='/' target='_blank' aria-label='Linkedin'>
-              <FaLinkedin />
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
       </section>
       <div class="weak-copy">
         <a class="footer-logo" href="/">Flash</a>
-        <div> &copy; {new Date().getFullYear()} All right reserved.</div>
-         <!-- Latansani © 新しい年を表示 -->
+        <div id='footer-copy'>©20202020 All right reserved.</div>
+      
       </div>
     </div>
 
@@ -161,7 +168,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-  
+
   <script src="js/index.js"></script>
 </body>
 
