@@ -8,9 +8,9 @@ tl.to('.intro', { y: "-100%", duration: 1 }, "-=1");
 
 
 
-// tl.to('.slider', { y: "-100%", duration: 1.5, delay: 0.4});
+tl.to('.slider', { y: "-100%", duration: 1.5, delay: 0.4});
 
-// tl.to('nav', {opacity: 0.8}, {opacity: 1, duration: 1}, '-=1');
+tl.to('nav', {opacity: 0.8}, {opacity: 1, duration: 1}, '-=1');
 
 // ここまではEd
 
@@ -23,41 +23,75 @@ tl.to('.intro', { y: "-100%", duration: 1 }, "-=1");
 
 // gsap.from('.content-img', {x: -100, opacity: 0, duration: 1.5,start: 'bottom center'})
 
-gsap.from('.about-content', {duration: 2, start: 'bottom center', x: 100, toggleActions: 'play reset play reset', end: '+=500'})
+gsap.from('.about-content', { duration: 2, start: 'top center', x: 100, toggleActions: 'restart pause resume  pause' })
 
 let tl1 = gsap.timeline({
   scrollTrigger: {
     trigger: 'l-title',
     start: 'top center',
-    end: '+=500'
+    toggleActions: 'restart pause none  pause',
   }
 });
-tl1.from('l-title', {x: 100, opacity: 0, duration: 1.5, start: 'top center'})
-  .from('.content-img2', {x: -100, opacity: 0, duration: 1}, )
-  .from('.context2', {y: -100, opacity: 0, duration: 1}, '-=1')
+tl1.from('l-title', { x: 100, opacity: 0, duration: 1.5, start: 'top center' })
+  .from('.content-img2', { x: -100, opacity: 0, duration: 1 },)
+  .from('.context2', { y: -100, opacity: 0, duration: 1 }, '-=1')
 
 
 
-gsap.from('.services-content', {duration: 3, start: 'top center', x: 100, toggleActions: 'play reset play reset'})
+// gsap.from('.services-content', {duration: 3, start: 'top center', x: 100, toggleActions: 'restart none play pause'})
 
-let tl3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: 'service-conetent',
-    start: 'top center',
-  }
+// let tl3 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: 'services-conetent',
+//     start: 'top center',
+//     toggleActions: 'restart pause resume  pause',
+//   }
+// });
+// tl3.from('services-content', {x: 100, opacity: 0, duration: 1.5, start: 'bottom center'})
+//   .from('.content-img3', {x: -100, opacity: 0, duration: 1}, )
+//   .from('.context3', {y: -100, opacity: 0, duration: 1}, '-=1')
+
+
+
+
+// gsap.to('services-content', {
+//   scrollTrigger: {
+//     trigger: '.services-content',
+//     start: 'top center',
+//     toggleActions: 'restart pause reverse pause',
+//     end: 'top 100px'
+//   },
+//   x: 100,
+//   opacity: 0,
+//   duration: 3
+// });
+
+
+let tl3 = gsap.timeline90;
+tl2.from('.services-content', { sPercent: -100 })
+  .from('.content-img3', { xPercent: 100 })
+  .from('.context3', { yPercent: -100 });
+
+
+
+// <div id='footer-copy'> &copy; {new Date().getFullYear()} All right reserved.</div>
+// <!-- Latansani © 新しい年を表示 -->
+
+
+
+
+
+// need to fix
+const open = document.getElementById('open');
+const overlay = document.getElementById('.overlay');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+  overlay.classList.add('show');
+  open.classList.add('hidden');
 });
-tl3.from('service-content', {x: 100, opacity: 0, duration: 1.5, start: 'bottom center'})
-  .from('.content-img3', {x: -100, opacity: 0, duration: 1}, )
-  .from('.context3', {y: -100, opacity: 0, duration: 1}, '-=1')
 
-
-
-
-
-
-
-
-
-
-  // <div id='footer-copy'> &copy; {new Date().getFullYear()} All right reserved.</div>
-  // <!-- Latansani © 新しい年を表示 -->
+close.addEventListener('click', () => {
+  overlay.classList.remove('show');
+  open.classList.remove('hidden');
+});

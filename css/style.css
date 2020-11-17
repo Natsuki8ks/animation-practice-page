@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 main {
 }
@@ -22,6 +23,7 @@ nav {
 #logo {
   padding: 5px 0 0 30px;
   font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-link {
   display: flex;
@@ -53,7 +55,7 @@ li:hover {
   color: #ffffff;
 }
 .intro {
-  background: rgb(197, 144, 83);
+  background: rgb(29, 24, 18);
   position: fixed;
   top: 0;
   left: 0;
@@ -66,10 +68,11 @@ li:hover {
 .intro-text {
   color: #ffffff;
   padding-top: 10rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .hide {
   /* display: none; */
-  background: rgb(197, 144, 83);
+  background: rgb(29, 24, 18);
   overflow: hidden;
   padding: 10px;
 }
@@ -165,4 +168,31 @@ section {
 }
 .facebook {
   color: rgb(115, 121, 211);
+}
+.map-content {
+  width: 500px;
+  margin: 0;
+}
+#map {
+  height: 100%;
+}
+
+
+
+
+/* need fix */
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#open.hidden {
+  display: none;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
 }
