@@ -170,18 +170,16 @@ section {
   color: rgb(115, 121, 211);
 }
 
-.mid-div {
-  width: 200%;
-  height: 600px;
+.mid-image{
+  width: 100%;
+  justify-content: center;
 }
 
 
 .map-content {
   width: 500px;
   margin: 0;
-}
-#map {
-  height: 100%;
+  margin: 0 auto;
 }
 
 

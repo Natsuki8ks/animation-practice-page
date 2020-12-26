@@ -7,7 +7,6 @@ tl.to('.intro', { y: "-100%", duration: 1 }, "-=1");
 // 1 second faster
 
 
-
 tl.to('.slider', { y: "-100%", duration: 1, delay: 0.4});
 
 tl.to('nav', {opacity: 0.8}, {opacity: 1, duration: 1}, '-=1');
@@ -23,9 +22,9 @@ let tl2 = gsap.timeline({
   }
 });
 
-tl2.from('img', {x: 300, opacity: 0, duration: 1}, '-=1')
-.from('.l-title', {x: 300, opacity: 0, duration: 1}, '+=1')
-  .from('.contents', {y: 300, opacity: 0, duration: 1}, '-=1')
+tl2.from('img', {x: 300, opacity: 0, duration: 0.5}, '-=1')
+.from('.l-title', {x: 300, opacity: 0, duration: 0.5}, '')
+.from('.contents', {y: 300, opacity: 0, duration: 0.5}, '')
 
 
 
