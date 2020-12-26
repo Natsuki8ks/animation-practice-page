@@ -112,9 +112,10 @@ li:hover {
   font-size: 26px;
 }
 img {
-  max-width: 350px;
+  max-width: 300px;
   object-fit: cover;
   /* つぶれたイメージを調整 */
+  padding-left: 2em;
 }
 .news {
   padding: 5rem;
@@ -161,7 +162,6 @@ section {
   display: flex;
   justify-content: center;
 }
-
 .SocialIcons {
   font-size: 24px;
   text-decoration: none;
@@ -169,6 +169,13 @@ section {
 .facebook {
   color: rgb(115, 121, 211);
 }
+
+.mid-div {
+  width: 200%;
+  height: 600px;
+}
+
+
 .map-content {
   width: 500px;
   margin: 0;
